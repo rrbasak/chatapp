@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/whatimgg.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Poppins:wght@100;200&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img id="wpimg" src="images/whatimgg.png" width="35px">
+            <h1>Whatsapp</h1>
+        </div>
+        <button type="button" onclick="toggleText()">
+            <img id="image" src="images/hamburger.jpg" width="20px" height="16px">
+        </button>
+    </header>
+    <div class="container">
+        <div class="userwindow"> 
+            <div class="userhead">
+                <h3>people</h3>
+                <h4 class="countlist"></h4>
+            </div>
+            <div class="userlist">
+               <!-- <p>jarvis</p>
+               <p>ulton</p>  -->
+            </div>
+
+        </div>
+        <div class="chatwindow">
+            <div class="chat">
+                <!-- <img src="images/background.jpg" style="overflow: hidden;"> -->
+                <!-- <div class="userjoin">
+                    <p><b>jarvis</b> joined the chat</p>
+                </div> -->
+                <!-- <div class="message incoming">
+                    <h5>jarvis</h5>
+                    <p>Hello ulton</p>
+                </div>
+                <div class="message outgoing">
+                    <h5>ulton</h5>
+                    <p>welcome jarvis</p>
+                </div> -->
+            </div>
+            <div class="userinput">
+                <input id="msg" type="text" placeholder="Type here">
+                <!-- <button>send</button> -->
+                <img id="send" src="images/send.png" class="imgg" height="50">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
